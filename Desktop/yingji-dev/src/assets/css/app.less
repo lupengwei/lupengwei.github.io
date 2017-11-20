@@ -1,0 +1,22 @@
+*{ margin: 0;padding: 0; }
+
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 覆盖SUI样式 */
+.page {
+  background-color: #FFF;
+}
+
+
+/* 自定义样式 */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+  opacity: 0
+}
