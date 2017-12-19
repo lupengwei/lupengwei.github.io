@@ -3,6 +3,8 @@ import Cookies from 'js-cookie'
 const TokenKey = 'Admin-Token'
 
 export function getToken() {
+  Cookies.set('Admin-Token', 'admin');
+  Cookies.set('sidebarStatus', 0);
   return Cookies.get(TokenKey)
 }
 
