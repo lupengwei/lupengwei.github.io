@@ -1,0 +1,155 @@
+.desp-cover-container {
+  width: 880px;
+  min-height: 1024px;
+  border: 1px solid #CCC;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: 'STSong';
+  color: #000;
+  .desp-cover-title {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .desp-cover-vice-title {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.8;
+  }
+}
+.desp-cover-list-box {
+  width: 300px;
+  margin: 50px auto;
+  font-size: 24px;
+  font-weight: 700;
+  .left {
+    width: 100px;
+    height: 30px;
+    margin: 15px 0;
+    text-align:justify;
+    text-align-last:justify;
+    &:after {
+      display:inline-block;
+      content:'';
+      overflow:hidden;
+      width:100%;
+      height:0;
+    }
+  }
+  .right {
+    width: 200px;
+    height: 30px;
+    margin: 15px 0;
+    padding-left: 30px;
+    font-family: 'Microsoft JhengHei';
+  }
+}
+.desp-cover-table {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #5A5A5A;
+  padding-bottom: 2px;
+  .desp-cover-table-item {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  .desp-cover-table-itembox {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+.desp-border-top {
+  border-top: 1px solid #5A5A5A;
+}
+.desp-border-bottom {
+  border-bottom: 1px solid #5A5A5A;
+}
+.desp-border-right {
+  border-right: 1px solid #5A5A5A;
+}
+.desp-border-rightbottom {
+  border-right: 1px solid #5A5A5A;
+  border-bottom: 1px solid #5A5A5A;
+}
+.desp-border-leftrightbottom {
+  border-left: 1px solid #5A5A5A;
+  border-right: 1px solid #5A5A5A;
+  border-bottom: 1px solid #5A5A5A;
+}
+
+//阶段划分
+.desp-board-header {
+  width: 100%;
+  height: 65px;
+  .desp-board-title {
+    height: 33px;
+    line-height: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .desp-board-button {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FF4C00;
+    &:hover {
+      color: #FFF;
+      background: #67D3FB;
+      cursor: pointer;
+    }
+  }
+}
+.desp-board-content {
+  width: 100%;
+  overflow: auto;
+  padding-top: 2px;
+  .desp-board-content-item {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    &:hover {
+      background: #E7F6FE;
+      cursor: pointer;
+    }
+  }
+}
+
+//双周计划
+.desp-item-container {
+  position: relative;
+  .desp-item-masklayer {
+    display: none;
+  }
+  &:hover{
+    .desp-item-masklayer {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 99;
+      background: #FFF;
+      padding: 0 5px;
+    }
+  }
+}
+
+//
+.desp-selected-item {
+  margin: 5px;
+  padding: 5px;
+  border: 1px dashed #BABABA;
+  &:hover {
+    color: #2DB6FF;
+    .closed {
+      color: #FC2908;
+      cursor: pointer;
+      font-size: 13px;
+    }
+  }
+}
